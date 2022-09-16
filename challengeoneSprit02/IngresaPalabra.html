@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa Palabras al Ahoracado</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1 class="imaglogo"><img src="img/LogoAlura.png" alt=""></h1>
+        </div>
+    </header>
+    <main class="principal_main">
+        <div class="formulario__grupo" id="grupo__texto2">
+		    <label for="texto" class="formulario__label">Adiciona nuevas palabras al desafio</label>
+			<div class="formulario__grupo-input">
+               <input type="text" class="formulario__input clear" name="texto2" id="textoin" maxlength="8"  placeholder="Su Palabra aquí.....">
+               <button onclick="agregarPalabra();"  type="submit" class="formulario__btn" id="prueba"><span>Agregar palabra</span></button>
+               
+           	</div>
+                <div class="formulario__input-let" id="inPalabra"></div>
+                <p class="formulario__input-num">Se agregaron  0<span id="cantidad"></span> palabras</p>
+				<p class="formulario__input-num">(*)Maximo de caraxteres permitidos 8.</p>
+        </div>
+        <div class="btn-paquete">
+            <button onclick="window.location.href='Ahorcado.html';"  type="submit" class="formulario__btn" id="prueba"><span>Guardar y empezar</span></button>
+            <button onclick="Cancelar();" type="submit" class="formulario__btn" id="prueba"><span>Cancelar</span></button>
+        
+        
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy Copyright -Emil Herrera - 2022</p>
+    </footer>
+
+    <script src="JSIngresaPalabra.js"></script>
+
+</body>
+
+</html>

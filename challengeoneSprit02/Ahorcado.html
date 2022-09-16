@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia el Juego del Ahoracado</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+<body>
+    <header>
+            <div class="caja">
+                <h1 class="imaglogo"><img src="img/LogoAlura.png" alt=""></h1>
+            </div>
+            <h1 class="titulo">EL AHORCADO</h1>
+    </header>
+    <main class="principal_main">
+        <div class="principal_Ahorcado">
+            <p>Introducir una letra</p>
+            <section class="seccion01">
+                <input class="inp_seccion01" id="letra" type="text" maxlength="1">
+                <button class="btn_seccion01" id="calcular">Agregar Letra</button>
+            </section>
+            <p id="salida"></p>
+            <section class="seccion02">
+                <p>Solo tienes 7 intentos,</p>
+                <p>muestra de las letras erradas son:  </p>
+                <p class="malas" id="malas"></p>
+            </section>
+            <div class="img">
+                <img id="imagen" src="img/elahoracado00.jpg" alt="">
+            </div>
+        </div>
+        <div class="botones">
+            <button onclick="window.location.href='IngresaPalabra.html';"  type="submit" class="formulario__btn" id="newgame"><span>Nuevo Juego</span> </button>
+            <button onclick="window.location.href='index.html';"  type="submit" class="formulario__btn" id="terminar"><span>Desistir</span></button>
+        </div>
+        
+        <section class="Ventana_Modal">
+            <div class="Madal_contenedor">
+                <img class="Madal_img" id="imagen_modal" src="img/LogoAlura.png " alt="">
+                <h1>Felicitaciones has Ganado</h1>
+                <button class="Madal_cerrar" onclick="window.location.href='Ahorcado.html';">Volver</button>
+            </div>
+        </section>
+
+        <section class="Ventana_Modal_mal">
+            <div class="Madal_contenedor">
+                <img class="Madal_img" id="imagen_modal" src="img/LogoAlura.png " alt="">
+                <h1>Lamentablemente has Perdido</h1>
+                <p>has Fallado la palabra era  <span id="valor"></span></script></p>
+                <button class="Madal_cerrar" onclick="window.location.href='Ahorcado.html';">Volver</button>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p class="copyright">&copy Copyright -Emil Herrera - 2022</p>
+    </footer>
+
+<script src="JavaScript.js"></script>
+
+</body>
+</html>
